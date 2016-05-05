@@ -1,0 +1,96 @@
+/*
+Theme Name:     Colormag-Child
+Description:    
+Author:         admin
+Template:       colormag
+
+(optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
+*/
+
+.ow-button-base{
+	border-left: 4px solid #D05A17;
+}
+
+.widget_featured_posts{
+	padding-top: 5rem;
+}
+
+.widget_tribe-events-list-widget{
+	padding-top: 3.5rem;
+}
+
+.tribe-events-list-widget ol li {
+    list-style: none;
+    margin-bottom: 20px;
+    border-left: 5px solid #F37934;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tribe-event-title{
+	padding-left: 1rem;
+	font-size: 1.4rem;
+	padding-bottom: 0rem !important;
+}
+
+.tribe-event-title a{
+}
+
+.tribe-event-duration{
+	padding-left: 1rem;
+}
+
+
+
+/* widget event title */
+.widget-title{
+	color: #F37934;
+	font-size: 2rem;
+}
+
+.tribe-events-list-widget .widget-title{
+	border-bottom: 2px solid #F37934;
+	margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+/* Beside Slider */
+
+.tribe-events-list-widget ol li {
+    list-style: none;
+    margin-bottom: 10px;
+    border-left: 5px solid #F37934;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tribe-event-duration{
+	padding-left: 1rem;
+	color: #999;
+	font-size: .9rem;
+}
+
+.tribe-event-title{
+	padding-left: 1rem;
+	font-size: 1.1rem;
+	padding-bottom: 0rem !important;
+}
+
+.tribe-event-title a{
+	color: #323232;
+}
+
+.widget-title{
+	color: #323232;
+	font-size: 2rem;
+}
+
+.tribe-events-list-widget .widget-title{
+	border-bottom: 1px solid #F2F2F2;
+	margin-bottom: 1rem;
+}
