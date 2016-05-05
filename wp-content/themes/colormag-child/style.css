@@ -7,9 +7,7 @@ Template:       colormag
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
 
-.ow-button-base{
-	border-left: 4px solid #D05A17;
-}
+
 
 .widget_featured_posts{
 	padding-top: 5rem;
