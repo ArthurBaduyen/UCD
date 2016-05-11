@@ -8,87 +8,253 @@ Template:       colormag
 */
 
 
+/*Job page | list*/
+div.entry-content div.job_listings ul.job_listings li.job_listing{
+	margin-bottom: .7rem !important;
+	margin-top: .5rem !important
+}
+
+/*Job page | Job title*/
+div.entry-content div.job_listings ul.job_listings li.job_listing a div h3{
+	padding-left: 0px !important;
+}
+
+/*Job view page | job description*/
+.job_description{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/*Job view page | apply button*/
+.application_button{
+	margin-left: 1rem !important;
+	margin-bottom: 1rem !important;
+}
+
+/* Home page | above blue button*/
+.panel-grid-cell .so-panel {
+    margin-bottom: 0px !important;
+}
+
+/*Job page | Hide page title*/
+article.type-page header.entry-header h1.entry-title{
+	display: none;
+}
+
+/*space for footer*/
+.main-content-section{
+	padding-bottom: 8rem !important;
+}
+
+/*footer*/
+footer{
+	background-color: #fff;
+}
+
+/**/
+section.widget_siteorigin-panels-builder{
+	margin-top: 1rem !important;
+	margin-bottom: 2rem !important;
+}
+
+/*Home page | Slider*/
+.front-page-top-section{
+	margin-top: 2rem !important;
+}
+
+/*Job Listing*/
+.entry-content ul{
+    padding: 0 0 0 0px !important;
+}
+
+/*Home page | Jobs Listing*/
+.job_listing{
+	border-bottom: 0px solid #eee !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	margin-bottom: 30px !important;
+}
+
+
+
+li.job_listing{
+	border-left: 5px solid	#f37934;
+	border-bottom: none !important;
+}
+
+/**/
+ul.job_listings li.job_listing a ul.meta{
+	padding-left: 10px !important;
+	font-size: 14px !important;
+}
+
+ul.job_listings li.job_listing a{
+	padding-top: 0px !important;
+	padding-bottom: 1px !important;
+}
+
+ul.job_listings li.job_listing a div.position h3{
+	padding-left: 10px !important;
+	font-size: 1.2rem !important;
+}
+
+
+.menu-sidebar-container .menu li.menu-item{
+	font-size: 1.2rem !important;
+	border-left: 5px solid	#f37934 !important;
+	margin-bottom: .4rem !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+li.menu-item a{
+	padding-left: 1rem !important;
+}
+
+
 
 .widget_featured_posts{
-	padding-top: 5rem;
+	padding-top: 2rem !important;
+	padding-bottom: .3rem !important;
 }
 
 .widget_tribe-events-list-widget{
-	padding-top: 3.5rem;
+	padding-top: 3.5rem !important;
 }
 
 .tribe-events-list-widget ol li {
-    list-style: none;
-    margin-bottom: 20px;
-    border-left: 5px solid #F37934;
-    background-color: #ffffff;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    list-style: none !important;
+    margin-bottom: 20px !important;
+    border-left: 5px solid #F37934 !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
 .tribe-event-title{
-	padding-left: 1rem;
-	font-size: 1.4rem;
+	padding-left: 1rem !important;
+	font-size: 1.4rem !important;
 	padding-bottom: 0rem !important;
 }
 
+/* Home | Event Title*/
 .tribe-event-title a{
+	font-size: 1.2rem !important;
 }
 
-.tribe-event-duration{
-	padding-left: 1rem;
+/*View All Events*/
+p.tribe-events-widget-link{
+	display: none;
 }
 
+.tribe-events-list-widget .widget-title{
+	border-bottom: 2px solid #F37934 !important;
+	margin-bottom: 1rem !important;
+}                                                                
 
 
 /* widget event title */
 .widget-title{
-	color: #F37934;
-	font-size: 2rem;
-}
-
-.tribe-events-list-widget .widget-title{
-	border-bottom: 2px solid #F37934;
-	margin-bottom: 1rem;
+	color: #F37934 !important;
 }
 
 
 
+/* Features 4 rows*/
+section.widget_sow-features{
+	margin-top: 8rem !important;
+	margin-bottom: 5rem !important;
+}
+
+/* 3 rows */
+.siteorigin-panels-stretch{
+	padding-bottom: 3rem !important;
+}
 
 
+
+.panel-grid .panel-grid-cell .widget_recent_jobs{
+	padding-top: 3.5rem !important;
+}
+
+.panel-grid .panel-grid-cell .widget_recent_jobs h3.widget-title{
+	border-bottom: 1px solid #F2F2F2 !important;
+}
+
+.panel-grid .panel-grid-cell .widget_recent_jobs ul.job_listings{
+	padding-top: 1rem !important;
+}
 
 
 /* Beside Slider */
 
+/*homepage Upcoming Events*/
 .tribe-events-list-widget ol li {
-    list-style: none;
-    margin-bottom: 10px;
-    border-left: 5px solid #F37934;
-    background-color: #ffffff;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    list-style: none !important;
+    margin-bottom: 30px !important;
+    border-left: 5px solid #F37934 !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+.tribe-events-list-widget ol:last-of-type{
+	margin-bottom: 1rem !important;
 }
 
 .tribe-event-duration{
-	padding-left: 1rem;
-	color: #999;
-	font-size: .9rem;
+	padding-left: 1rem !important;
+	color: #999 !important;
+	font-size: .9rem !important;
 }
 
 .tribe-event-title{
-	padding-left: 1rem;
-	font-size: 1.1rem;
+	padding-left: 1rem !important;
+	font-size: 1.1rem !important;
 	padding-bottom: 0rem !important;
 }
 
 .tribe-event-title a{
-	color: #323232;
+	color: #323232 !important;
 }
 
 .widget-title{
-	color: #323232;
-	font-size: 2rem;
+	color: #323232 !important;
 }
 
 .tribe-events-list-widget .widget-title{
-	border-bottom: 1px solid #F2F2F2;
-	margin-bottom: 1rem;
+	border-bottom: 1px solid #F2F2F2 !important;
+	margin-bottom: 1rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Sidebar | Sidebar 1 */
+aside.widget h3.widget-title{
+	font-size: 1rem !important;
+}
+
+/*SIdebar | Upcoming Event, Recent Jobs */
+aside.widget ol li, aside.widget ul li{
+	margin-bottom: 10px !important;
+}
+
+/*Homepage | event list*/
+div div div div ol li.tribe-events-list-widget-events{
+	padding-bottom: .1rem !important;
+	padding-top: .1rem !important;
+}
+
+/*Homepage | Job list*/
+div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_listings li.job_listing{
+	padding-bottom: .1rem !important;
+	padding-top: .1rem !important;
+}
+
+/*Homepage | Event and Job section*/
+section.widget_siteorigin-panels-builder{
+	padding-bottom: 10rem !important;
 }
