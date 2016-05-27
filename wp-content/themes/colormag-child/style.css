@@ -7,6 +7,50 @@ Template:       colormag
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
 
+html * {
+	font-family: 'helvetica';
+}
+
+/*Global Post Widgest | Title size*/
+h3.entry-title{
+	font-size: 1rem !important;
+	color: #585858 !important;
+}
+
+/*Global Post Widget | Following post | Title*/
+div.following-post div.single-article div.article-content h3.entry-title{
+	font-size: .8rem !important;
+	color: #585858 !important;
+}
+
+div.article-content div.entry-content p{
+	/*font-size: .8rem !important;*/
+	color: #888888;
+}
+
+/*Homepage | Login Button
+section.widget_siteorigin-panels-builder div div div div div.so-widget-sow-features{
+
+}
+
+/*Homepage | login button beside slider*/
+div.widget_beside_slider{
+	/*border-top: 20px solid #CFB87B !important;*/
+	background-color: #F9F9F9 !important;
+	height: 350px !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+/*Homepage | Login button container*/
+div.widget_beside_slider section{
+	padding-bottom: 60px !important;
+	margin-top: 5rem !important;
+}
+
+/*Post View page | Hide Author box*/
+div.hfeed div div.inner-wrap div div.author-box{
+		display: none;
+}
 
 /*Job page | list*/
 div.entry-content div.job_listings ul.job_listings li.job_listing{
@@ -77,7 +121,7 @@ section.widget_siteorigin-panels-builder{
 
 
 li.job_listing{
-	border-left: 5px solid	#f37934;
+	border-left: 5px solid	#ccc !important;
 	border-bottom: none !important;
 }
 
@@ -100,7 +144,7 @@ ul.job_listings li.job_listing a div.position h3{
 
 .menu-sidebar-container .menu li.menu-item{
 	font-size: 1.2rem !important;
-	border-left: 5px solid	#f37934 !important;
+	border-left: 5px solid	#ccc !important;
 	margin-bottom: .4rem !important;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
 }
@@ -118,14 +162,6 @@ li.menu-item a{
 
 .widget_tribe-events-list-widget{
 	padding-top: 3.5rem !important;
-}
-
-.tribe-events-list-widget ol li {
-    list-style: none !important;
-    margin-bottom: 20px !important;
-    border-left: 5px solid #F37934 !important;
-    background-color: #ffffff !important;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
 .tribe-event-title{
@@ -159,8 +195,8 @@ p.tribe-events-widget-link{
 
 /* Features 4 rows*/
 section.widget_sow-features{
-	margin-top: 8rem !important;
-	margin-bottom: 5rem !important;
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
 }
 
 /* 3 rows */
@@ -189,7 +225,7 @@ section.widget_sow-features{
 .tribe-events-list-widget ol li {
     list-style: none !important;
     margin-bottom: 30px !important;
-    border-left: 5px solid #F37934 !important;
+    border-left: 5px solid #ccc !important;
     background-color: #ffffff !important;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
 }
@@ -237,9 +273,25 @@ aside.widget h3.widget-title{
 	font-size: 1rem !important;
 }
 
-/*SIdebar | Upcoming Event, Recent Jobs */
+/*Sidebar | Upcoming Event, Recent Jobs */
 aside.widget ol li, aside.widget ul li{
 	margin-bottom: 10px !important;
+}
+
+/*Sidebar | featured menu*/
+div aside.widget_nav_menu div.menu-sidebar-container ul.menu li.menu-item a{
+	font-size: 1rem !important;
+	color: #323232 !important;
+}
+
+/*Sidebar | Upcoming Event List title*/
+div aside.tribe-events-list-widget ol.tribe-list-widget li.tribe-events-list-widget-events h4.tribe-event-title a{
+	font-size: 1rem	!important;
+}
+
+/*Sidebar | Recent Jobs Title*/
+div aside.job_manager ul.job_listings li.job_listing a div.position h3 {
+    font-size: 1rem !important;
 }
 
 /*Homepage | event list*/
@@ -257,4 +309,47 @@ div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_list
 /*Homepage | Event and Job section*/
 section.widget_siteorigin-panels-builder{
 	padding-bottom: 10rem !important;
+}
+
+/*Jobs page | List Company name*/
+div.entry-content div.job_listings ul.job_listings li.job_listing a div.position div.company strong{
+	font-weight: lighter !important;
+	font-size: .85rem !important;
+}
+
+/*Job page | List Company Address*/
+div.entry-content div.job_listings ul.job_listings li.job_listing a div.location{
+	font-weight: lighter;
+	font-size: .85rem !important
+}
+
+/*Job View Page | Job Title*/
+div.article-content header.entry-header h1.entry-title{
+	padding-left: 1rem;
+}
+
+/*Job View Page | Meta Below Job Title*/
+div.article-content div.entry-content div.single_job_listing ul.job-listing-meta{
+	padding-left: 1rem !important;
+}
+
+/*Default Button*/
+.ow-button-base a{
+	background-color: #CFB87B !important;
+	border: none !important;
+	border-bottom: 3px solid #bda971 !important;
+	border-radius: 4px !important;
+}
+
+/*Label Category */
+.cat-links a{
+	background-color: #CFB87B !important;
+}
+
+#secondary .widget-title span{
+	background-color: #232323 !important;
+}
+
+.widget-title {
+	border-bottom: 2px solid #232323 !important;
 }
