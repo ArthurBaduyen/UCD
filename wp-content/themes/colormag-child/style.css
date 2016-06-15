@@ -11,6 +11,11 @@ html * {
 	font-family: 'helvetica';
 }
 
+/*Global color for paragraph and List Item*/
+p, ul li{
+	color: #808080 !important;
+}
+
 /*Global Post Widgest | Title size*/
 h3.entry-title{
 	font-size: 1rem !important;
@@ -28,29 +33,218 @@ div.article-content div.entry-content p{
 	color: #888888;
 }
 
-/*Homepage | Login Button
-section.widget_siteorigin-panels-builder div div div div div.so-widget-sow-features{
+/*-------------------- HOMEPAGE --------------------*/
 
+/*Homepage*/
+#page div.clearfix {
+	padding-top: 0;
 }
 
-/*Homepage | login button beside slider*/
-div.widget_beside_slider{
-	/*border-top: 20px solid #CFB87B !important;*/
-	background-color: #F9F9F9 !important;
-	height: 350px !important;
+/*Homepage | plugin slider*/
+#b-plugins-view{
+	padding: 0 !important;
+	margin-bottom: 0;
+}
+
+/*Homepage | plugin slider*/
+#b-ajax-results-html{
+	margin: 0;
+}
+
+/*Homepage | plugin slider*/
+.b-slider-thumbnail{
+	height: 600px;
+	margin-bottom: 1.5rem !important;
+}
+/*Homepage | plugin slider image*/
+.b-plugins-category .b-flexslider .slides img{
+	width: 100%;
+	/*height: 500px !important;*/
+}
+
+/*Homepage | plugin slider title*/
+.b-li-child-flex >.row >div h3 a{
+	font-size: 2rem;
+	margin-top: .5rem !important;
+}
+
+/*Homepage | plugin slider date*/
+.b-li-child-flex >.row >div p{
+	font-size: 1rem;
+}
+
+/*Homepage | theme slider section*/
+.front-page-top-section{
+	display: none;
+}
+
+/*Homepage | origin feature widget*/
+.panel-grid{
+	margin-bottom: 0 !important;
+}
+
+/*Homepage | 3column Meta Date*/
+.widget_featured_posts .article-content .below-entry-meta{
+	display: none !important;
+}
+
+/*Homepage | 3column details*/
+.widget_featured_posts .article-content .entry-content{
+	display: none !important;
+}
+
+/*homepage Upcoming Events*/
+.tribe-events-list-widget ol li {
+    list-style: none !important;
+    margin-bottom: 30px !important;
+    border-left: 5px solid #ccc !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+/*Homepage | Post*/
+.cat-links{
+	display: none;
+}
+
+/*Homepage | event list*/
+div div div div ol li.tribe-events-list-widget-events{
+	padding-bottom: .1rem !important;
+	padding-top: .1rem !important;
+}
+
+/*Homepage | Job list*/
+div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_listings li.job_listing{
+	padding-bottom: .1rem !important;
+	padding-top: .1rem !important;
+}
+
+/*Homepage | Headline | undergrad, grad & cpep*/
+.panel-grid-cell .panel-first-child{
+	margin-top: 5rem;
+	margin-bottom: 1.5rem;
+}
+
+/*Homepage | twitter feed*/
+.widget-easy-twitter-feed-widget-global-wrapper{
+	margin-top: 8.5rem !important;
+}
+
+/*Homepage | twitter title bottom border*/
+.widget-easy-twitter-feed-widget-global-wrapper .widget-title{
+	border-bottom: 1px solid #F2F2F2 !important;
+}
+
+iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
+	font-size: 1.2rem !important;
+}
+
+/*Homepage | programs*/
+.so-widget-sow-headline-sow-headline-32f7cbb385e5 #sow-headline-container.sow-headline h6{
+	font-size: 1.2rem !important;
+	padding-bottom: 1rem !important;
+	color: #808080 !important;
+}
+
+/*Homepage | programs*/
+.so-widget-sow-headline-sow-headline-32f7cbb385e5 #sow-headline-container.sow-headline h1{
+	/*font-size: 3rem;*/
+}
+
+/* Homepage | above blue button*/
+.panel-grid-cell .so-panel {
+    margin-bottom: 0px !important;
+}
+
+/*Homepage | Slider*/
+.front-page-top-section{
+	margin-top: 2rem !important;
+}
+
+/*Homepage | Jobs Listing*/
+.job_listing{
+	border-bottom: 0px solid #eee !important;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	margin-bottom: 30px !important;
 }
 
-/*Homepage | Login button container*/
-div.widget_beside_slider section{
-	padding-bottom: 60px !important;
-	margin-top: 5rem !important;
+
+
+
+/*-------------------- ALUMNI --------------------*/
+
+/*Alumni page | features top & bottom padding*/
+.sow-features-list{
+	/*padding-top: 3rem !important;*/
+	padding-bottom: 0rem !important;
 }
 
-/*Post View page | Hide Author box*/
-div.hfeed div div.inner-wrap div div.author-box{
-		display: none;
+/*Alumni page | features top & bottom padding*/
+.siteorigin-panels-stretch .panel-grid-cell .widget_siteorigin-panels-builder .panel-grid{
+	padding-bottom: 3rem !important;
+	padding-top: 3rem !important;
 }
+
+/*Alumni page | images title*/
+.widget_sow-image .so-widget-sow-image-sow-image-3f547a15eaaa h2{
+	font-size: 1.2rem !important;
+	text-align: center;
+	position: relative;
+	top: -2rem;
+	background-color: #cfb87b;
+	padding-top: 1rem !important;
+	color: #fff;
+}
+
+/*Alumni page | images title line*/
+.widget_sow-image .so-widget-sow-image-sow-image-3f547a15eaaa h3{
+	display: none;
+}
+
+/*Alumni page | space before footer*/
+.status-publish .entry-content div .panel-grid{
+	/*padding-bottom: 8rem !important;*/
+}
+
+.so-widget-sow-button .ow-button-base{
+	padding-bottom: 5rem !important;
+}
+
+/*Alumni page | event list indent */
+.panel-grid .panel-grid-cell .widget_tribe-events-list-widget .tribe-list-widget{
+	padding-left: 0;
+}
+
+/*Alumni | programs*/
+#post-31 .so-widget-sow-headline-sow-headline-32f7cbb385e5 #sow-headline-container.sow-headline h6{
+	font-size: .9rem !important;
+	padding-bottom: 1rem !important;
+	color: #808080 !important;
+}
+
+/*Alumni | programs*/
+#post-31 .so-widget-sow-headline-sow-headline-32f7cbb385e5 #sow-headline-container.sow-headline h1{
+	font-size: 2rem !important;
+}
+
+/*Alumni | Features*/
+#post-43 .siteorigin-panels-stretch .panel-grid-cell .widget_siteorigin-panels-builder div .panel-grid .siteorigin-panels-stretch{
+	padding-bottom: 3rem !important;
+	padding-top: 3rem !important;
+}
+
+/*Alumni | features*/
+#post-43 .panel-grid-cell .panel-first-child{
+	margin-top: 0 !important;
+}
+
+#post-43 .ow-button-base .ow-button-hover{
+	color: #fff !important;
+}
+
+
+
+/*-------------------- JOB page --------------------*/
 
 /*Job page | list*/
 div.entry-content div.job_listings ul.job_listings li.job_listing{
@@ -62,6 +256,32 @@ div.entry-content div.job_listings ul.job_listings li.job_listing{
 div.entry-content div.job_listings ul.job_listings li.job_listing a div h3{
 	padding-left: 0px !important;
 }
+
+/*Job page | Hide page title*/
+article.type-page header.entry-header h1.entry-title{
+	display: none;
+}
+
+/*Job page | List Company Address*/
+div.entry-content div.job_listings ul.job_listings li.job_listing a div.location{
+	font-weight: lighter;
+	font-size: .85rem !important
+}
+
+
+
+
+
+
+
+
+
+/*Post View page | Hide Author box*/
+div.hfeed div div.inner-wrap div div.author-box{
+		display: none;
+}
+
+
 
 /*Job view page | job description*/
 .job_description{
@@ -75,15 +295,44 @@ div.entry-content div.job_listings ul.job_listings li.job_listing a div h3{
 	margin-bottom: 1rem !important;
 }
 
-/* Home page | above blue button*/
-.panel-grid-cell .so-panel {
-    margin-bottom: 0px !important;
+
+/*-------------------- SIDEBAR --------------------*/
+
+/*Sidebar | sidebar main*/
+#secondary{
+	margin-top: 2.6rem;
 }
 
-/*Job page | Hide page title*/
-article.type-page header.entry-header h1.entry-title{
-	display: none;
+/*Sidebar | Sidebar 1 */
+aside.widget h3.widget-title{
+	font-size: 1rem !important;
 }
+
+/*Sidebar | Upcoming Event, Recent Jobs */
+aside.widget ol li, aside.widget ul li{
+	margin-bottom: 10px !important;
+}
+
+/*Sidebar | featured menu*/
+div aside.widget_nav_menu div.menu-sidebar-container ul.menu li.menu-item a{
+	font-size: 1rem !important;
+	color: #323232 !important;
+}
+
+/*Sidebar | Upcoming Event List title*/
+div aside.tribe-events-list-widget ol.tribe-list-widget li.tribe-events-list-widget-events h4.tribe-event-title a{
+	font-size: 1rem	!important;
+}
+
+/*Sidebar | Recent Jobs Title*/
+div aside.job_manager ul.job_listings li.job_listing a div.position h3 {
+    font-size: 1rem !important;
+}
+
+
+
+
+
 
 /*space for footer*/
 .main-content-section{
@@ -101,21 +350,11 @@ section.widget_siteorigin-panels-builder{
 	margin-bottom: 2rem !important;
 }
 
-/*Home page | Slider*/
-.front-page-top-section{
-	margin-top: 2rem !important;
-}
+
 
 /*Job Listing*/
 .entry-content ul{
     padding: 0 0 0 0px !important;
-}
-
-/*Home page | Jobs Listing*/
-.job_listing{
-	border-bottom: 0px solid #eee !important;
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
-	margin-bottom: 30px !important;
 }
 
 
@@ -152,8 +391,6 @@ ul.job_listings li.job_listing a div.position h3{
 li.menu-item a{
 	padding-left: 1rem !important;
 }
-
-
 
 .widget_featured_posts{
 	padding-top: 2rem !important;
@@ -200,9 +437,23 @@ section.widget_sow-features{
 }
 
 /* 3 rows */
-.siteorigin-panels-stretch{
+section.widget_siteorigin-panels-builder div .panel-grid .siteorigin-panels-stretch{
 	padding-bottom: 3rem !important;
+	padding-top: 3rem !important;
 }
+
+/*3 rows*/
+#pg-w575e587aeb20d-0 .siteorigin-panels-stretch {
+	padding-bottom: 1rem !important;
+	padding-top: .1rem !important;
+	margin-top: 1rem !important;
+}
+
+/*3 rows*/
+#pg-w575e587aeb20d-0 .siteorigin-panels-stretch .panel-grid-cell .so-panel{
+	margin-top:  2rem !important;
+}
+
 
 
 
@@ -221,14 +472,7 @@ section.widget_sow-features{
 
 /* Beside Slider */
 
-/*homepage Upcoming Events*/
-.tribe-events-list-widget ol li {
-    list-style: none !important;
-    margin-bottom: 30px !important;
-    border-left: 5px solid #ccc !important;
-    background-color: #ffffff !important;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
-}
+
 .tribe-events-list-widget ol:last-of-type{
 	margin-bottom: 1rem !important;
 }
@@ -262,54 +506,14 @@ section.widget_sow-features{
 
 
 
-
-
-
-
-
-
-/*Sidebar | Sidebar 1 */
-aside.widget h3.widget-title{
-	font-size: 1rem !important;
+/*Post page | container before sidebar*/
+#primary{
+	/*margin-top: 2.6rem;*/
 }
 
-/*Sidebar | Upcoming Event, Recent Jobs */
-aside.widget ol li, aside.widget ul li{
-	margin-bottom: 10px !important;
-}
 
-/*Sidebar | featured menu*/
-div aside.widget_nav_menu div.menu-sidebar-container ul.menu li.menu-item a{
-	font-size: 1rem !important;
-	color: #323232 !important;
-}
 
-/*Sidebar | Upcoming Event List title*/
-div aside.tribe-events-list-widget ol.tribe-list-widget li.tribe-events-list-widget-events h4.tribe-event-title a{
-	font-size: 1rem	!important;
-}
 
-/*Sidebar | Recent Jobs Title*/
-div aside.job_manager ul.job_listings li.job_listing a div.position h3 {
-    font-size: 1rem !important;
-}
-
-/*Homepage | event list*/
-div div div div ol li.tribe-events-list-widget-events{
-	padding-bottom: .1rem !important;
-	padding-top: .1rem !important;
-}
-
-/*Homepage | Job list*/
-div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_listings li.job_listing{
-	padding-bottom: .1rem !important;
-	padding-top: .1rem !important;
-}
-
-/*Homepage | Event and Job section*/
-section.widget_siteorigin-panels-builder{
-	padding-bottom: 10rem !important;
-}
 
 /*Jobs page | List Company name*/
 div.entry-content div.job_listings ul.job_listings li.job_listing a div.position div.company strong{
@@ -317,11 +521,7 @@ div.entry-content div.job_listings ul.job_listings li.job_listing a div.position
 	font-size: .85rem !important;
 }
 
-/*Job page | List Company Address*/
-div.entry-content div.job_listings ul.job_listings li.job_listing a div.location{
-	font-weight: lighter;
-	font-size: .85rem !important
-}
+
 
 /*Job View Page | Job Title*/
 div.article-content header.entry-header h1.entry-title{
@@ -339,7 +539,13 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	border: none !important;
 	border-bottom: 3px solid #bda971 !important;
 	border-radius: 4px !important;
+	color: #fff !important;
 }
+
+.so-widget-sow-button-flat-75879e0e874d .ow-button-base a{
+	color: #fff !important;
+}
+
 
 /*Label Category */
 .cat-links a{
@@ -353,3 +559,228 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 .widget-title {
 	border-bottom: 2px solid #232323 !important;
 }
+
+/*Event page | Date filter function*/
+.tribe-bar-date-filter{
+	display: none;
+}
+
+
+
+
+
+/*Responsive Category Slider*/
+.b-menu-horizontal{
+	display: none;
+}
+
+.WPB_Widget h3.widget-title{
+	display: none;
+}
+
+.footer-socket-area{
+	padding-top: 2rem;
+}
+
+/*Psot page | title bottom border*/
+.page-header{
+	border-bottom: 0;
+}
+
+/*Post view page | article image top margin*/
+.featured-image{
+	margin-top: 2.6rem;
+}
+
+/*Events page | main content top margin*/
+.tribe-events-list{
+	margin-top: 2.6rem !important;
+}
+
+/*Event view page | main content top margin*/
+.tribe-events-single{
+	margin-top: 2.6rem !important;
+}
+
+
+
+.sow-features-list .sow-features-feature.sow-features-feature-last-row{
+	/*padding-top: 5rem !important;*/
+}
+
+
+
+
+/*Program page | content top margin*/
+#post-31{
+	margin-top: 2.6rem;
+}
+
+/*About Us Page | content top margin*/
+#post-41{
+	margin-top: 2.6rem;
+}
+
+#post-41 .panel-grid-cell .panel-first-child{
+	margin-top: 0 !important;
+}
+
+/*Contact Page | content top margin*/
+#post-447{
+	margin-top: 2.6rem;
+}
+
+/*Contact Page | list indent*/
+#post-447 .entry-content ul li{
+	margin-left: 1rem !important;
+}
+
+/*Undergraduate page | content top margin*/
+#post-455{
+	margin-top: 2.6rem;
+}
+
+#post-455 li{
+	margin-left: 1rem !important;
+}
+
+/*Graduate page | content top margin*/
+#post-457{
+	margin-top: 2.6rem;
+}
+
+/*CPEP page | content top margin*/
+#post-459{
+	margin-top: 2.6rem;
+}
+
+#post-520{
+	margin-top: 2.6rem;
+}
+
+#post-563{
+	margin-top: 2.6rem;
+}
+
+#post-573{
+	margin-top: 2.6rem;
+}
+
+/*Business Plan Competition | Content top margin*/
+#post-37{
+	margin-top: 2.6rem;
+}
+
+/*Business Plan Competition | frist child top margin*/
+#post-37 .panel-grid-cell .panel-first-child{
+	margin-top: 0 !important;
+}
+
+/*Business Plan Competition | small image bootom margin*/
+#post-37 .sow-image-container img{
+	margin-bottom: 0 !important;
+}
+
+
+
+/*contact page | margin top*/
+#post-447 .panel-grid-cell .panel-first-child{
+	margin-top: 0rem !important;
+}
+
+/*Program page | margin top*/
+#post-31 .panel-grid-cell .panel-first-child{
+	margin-top: 0 !important;
+}
+
+
+
+/*Conact page | button*/
+.sow-submit{
+	background-color: #CFB87B !important;
+	border: none !important;
+	border-bottom: 3px solid #bda971 !important;
+	border-radius: 4px !important;
+}
+
+/*Give to jabs page | ul indent*/
+#post-520 .entry-content ul{
+    padding: 0 0 0 2rem !important;
+}
+
+
+
+
+
+
+/*Tuition & Scholarships | content top margin*/
+#post-610 {
+    margin-top: 2.6rem !important;
+}
+
+#post-610 .panel-grid-cell .panel-first-child{
+	margin-top: 0 !important;
+}
+
+#post-610 #pl-610 .panel-grid .siteorigin-panels-stretch{
+	padding-top: 4rem !important;
+}
+
+/*Tuition & Scholarships | list indent*/
+#post-610 .entry-content ul li{
+	margin-left: 1rem !important;
+}
+
+/*Resources & Partners | content top margin*/
+#post-614{
+	margin-top: 2.6rem !important;
+}
+
+#post-614 .panel-grid-cell .panel-first-child{
+	margin-top: 0 !important;
+}
+
+/*How to enter | content top margin*/
+#post-616 {
+    margin-top: 2.6rem !important;
+}
+
+#post-616 li {
+	color: #808080 !important;
+}
+
+#post-638 {
+    margin-top: 2.6rem !important;
+}
+
+#post-638 .panel-grid-cell .panel-first-child{
+	margin-top: 0 !important;
+}
+
+#post-638 hr{
+	margin-top: 0 !important;
+	margin-bottom: 0.5rem !important;
+}
+
+#post-638 #pl-638 .panel-row-style{
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+}
+
+#post-638 h6, h5,p{
+}
+
+
+#post-638 img.size-colormag-featured-post-medium {
+	/*margin-top: 4rem;*/
+	width: 800px;
+}
+
+#post-638 img.size-colormag-featured-post-small {
+	width: 200px;
+}
+
+#post-638 .below-entry-meta{
+	display: block !important;
+}
+

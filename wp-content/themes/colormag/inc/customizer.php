@@ -549,11 +549,16 @@ function colormag_customize_register($wp_customize) {
 			'title' => __('Twitter', 'colormag'),
 			'default' => ''
 		),
-		'colormag_social_googleplus' => array(
-			'id' => 'colormag_social_googleplus',
-			'title' => __('Google-Plus', 'colormag'),
+		'colormag_social_linkedin' => array(
+			'id' => 'colormag_social_linkedin',
+			'title' => __('linkedin', 'colormag'),
 			'default' => ''
 		),
+      'colormag_social_googleplus' => array(
+         'id' => 'colormag_social_googleplus',
+         'title' => __('Google-Plus', 'colormag'),
+         'default' => ''
+      ),
 		'colormag_social_instagram' => array(
 			'id' => 'colormag_social_instagram',
 			'title' => __('Instagram', 'colormag'),

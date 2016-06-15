@@ -19,10 +19,11 @@ function colormag_social_links() {
 
    $colormag_social_links = array( 'colormag_social_facebook' 	=> __( 'Facebook', 'colormag' ),
 									'colormag_social_twitter' 		=> __( 'Twitter', 'colormag' ),
-									'colormag_social_googleplus' 	=> __( 'Google-Plus' , 'colormag' ),
-									'colormag_social_instagram' 	=> __( 'Instagram', 'colormag' ),
-									'colormag_social_pinterest' 	=> __( 'Pinterest', 'colormag' ),
-									'colormag_social_youtube' 		=> __( 'YouTube', 'colormag' )
+									'colormag_social_linkedin'	=> __( 'linkedin', 'colormag')//,
+									// 'colormag_social_googleplus' 	=> __( 'Google-Plus' , 'colormag' ),
+									// 'colormag_social_instagram' 	=> __( 'Instagram', 'colormag' ),
+									// 'colormag_social_pinterest' 	=> __( 'Pinterest', 'colormag' ),
+									// 'colormag_social_youtube' 		=> __( 'YouTube', 'colormag' )
 							 	);
 	?>
 	<div class="social-links clearfix">
