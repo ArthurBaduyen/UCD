@@ -68,6 +68,15 @@ div.article-content div.entry-content p{
 	margin-top: .5rem !important;
 }
 
+/*Alumni | */
+#pl-43 .b-li-child-flex >.row >div h3 a{
+	margin-top: 0px !important;
+}
+
+#pl-43 .b-slider-thumbnail{
+	margin-bottom: 0px !important;
+}
+
 /*Homepage | plugin slider date*/
 .b-li-child-flex >.row >div p{
 	font-size: 1rem;
@@ -187,7 +196,7 @@ iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 
 /*Alumni page | images title*/
 .widget_sow-image .so-widget-sow-image-sow-image-3f547a15eaaa h2{
-	font-size: 1.2rem !important;
+	font-size: 1rem !important;
 	text-align: center;
 	position: relative;
 	top: -2rem;
@@ -565,7 +574,11 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	display: none;
 }
 
-
+/*Event page | event title*/
+/*.tribe-events-page-title{
+	display: none;
+}
+*/
 
 
 
@@ -647,6 +660,10 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 /*Graduate page | content top margin*/
 #post-457{
 	margin-top: 2.6rem;
+}
+
+#post-457 .entry-content li{
+	margin-left: 1rem !important;
 }
 
 /*CPEP page | content top margin*/
