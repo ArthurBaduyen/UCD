@@ -242,6 +242,11 @@ iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 	padding-top: 3rem !important;
 }
 
+/*Alumni | content top margin*/
+#post-43 #pl-43 #pg-43-0{
+	margin-top: 2.6rem;
+}
+
 /*Alumni | features*/
 #post-43 .panel-grid-cell .panel-first-child{
 	margin-top: 0 !important;
@@ -634,6 +639,23 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	margin-top: 2.6rem;
 }
 
+#post-41 .team-title{
+	padding: 0 10px;
+}
+
+#post-41 .team-position{
+	padding: 0 10px;
+}
+
+#post-41 .team-social{
+	height: 20px;
+}
+
+#post-41 .team-thumb img{
+	margin-bottom: 5px;
+}
+
+
 #post-41 .panel-grid-cell .panel-first-child{
 	margin-top: 0 !important;
 }
@@ -766,10 +788,27 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	color: #808080 !important;
 }
 
+/*Past Winners*/
 #post-638 {
     margin-top: 2.6rem !important;
 }
 
+/*past Winners | post loop*/
+#post-638 div.panel-grid div.panel-grid-cell div.so-panel ul{
+	list-style: none !important;
+}
+
+/*past Winners | post loop*/
+#post-638 div.panel-grid div.panel-grid-cell div.so-panel ul .cat-post-item{
+	margin-bottom: 4rem !important;
+}
+
+/*past Winners | post loop*/
+#post-638 div.panel-grid div.panel-grid-cell div.so-panel ul .cat-post-item .cat-post-title{
+	font-size: 1.6rem !important;
+}
+
+/*past Winners | post loop*/
 #post-638 .panel-grid-cell .panel-first-child{
 	margin-top: 0 !important;
 }
@@ -782,9 +821,6 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 #post-638 #pl-638 .panel-row-style{
 	padding-top: 2rem !important;
 	padding-bottom: 2rem !important;
-}
-
-#post-638 h6, h5,p{
 }
 
 
