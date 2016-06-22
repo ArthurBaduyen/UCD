@@ -116,10 +116,18 @@ div.article-content div.entry-content p{
 	display: none;
 }
 
-/*Homepage | event list*/
+/*Homepage & Sidebar | event list*/
 div div div div ol li.tribe-events-list-widget-events{
 	padding-bottom: .1rem !important;
 	padding-top: .1rem !important;
+
+}
+
+/*Homepage Eventlist*/
+#pl-w5768e24743533 div ol li.tribe-events-list-widget-events{
+	padding-bottom: 1rem !important;
+	padding-top: 1rem !important;
+	border-left: 15px solid #ccc !important; 
 }
 
 /*Homepage | Job list*/
@@ -132,6 +140,54 @@ div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_list
 .panel-grid-cell .panel-first-child{
 	margin-top: 5rem;
 	margin-bottom: 1.5rem;
+}
+
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .widget_text .widget-title{
+	margin-top: 8.5rem !important;
+	border-bottom: 1px solid #F2F2F2 !important;
+}
+
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .widget_text .ffwd_title_spun1_0{
+	margin-top: 0px !important;
+	background-color: #fff !important;
+	border-bottom: 0px !important;
+}
+
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .blog_style_object_container_0:first-child{
+	border-top: 0px !important;
+}
+
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .blog_style_object_container_0{
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+}
+
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .ffwd_blog_style_object_name_0, .ffwd_from_time_post_0{
+	display: none;
+}
+
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0{
+	margin-bottom: 0px !important;
+}
+
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0 p{
+	line-height: 18px !important;
+	color: #000 !important;
+ }
+ 
+/*Homepage | Facebook feed*/
+#pl-w5768e24743533 .panel-grid .panel-grid-cell .blog_style_image_container_0 .bwg_blog_style_img_cont_0 img.ffwd_blog_style_img_0{
+	margin-bottom: 0rem !important;
+	border-radius: 5px !important;
+	width: 83.6% !important;
+	height: auto;
 }
 
 /*Homepage | twitter feed*/
