@@ -76,7 +76,7 @@
 		}
 
 		if ( ! isset( $user_password ) ){
-			$user_password = $ultimatemember->validation->generate();
+			$user_password = $ultimatemember->validation->generate( 8 );
 		}
 
 
@@ -123,8 +123,6 @@
 		$ultimatemember->user->set_role( $role );
 
 		$ultimatemember->user->set_registration_details( $args['submitted'] );
-
-		$ultimatemember->user->set_plain_password( $args['user_password'] );
 
 		$ultimatemember->user->set_last_login();
 
@@ -261,7 +259,10 @@
 			$role = um_get_option('default_role');
 		}
 
-		echo '<input type="hidden" name="role" id="role" value="' . $role . '" />';
+		$role = apply_filters('um_register_hidden_role_field', $role );
+		if( $role ){
+			echo '<input type="hidden" name="role" id="role" value="' . $role . '" />';
+		}
 
 	}
 

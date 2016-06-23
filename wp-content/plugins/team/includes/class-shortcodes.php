@@ -39,13 +39,13 @@ class class_team_shortcodes  {
 				$team_themes_dir = $class_team_functions->team_themes_dir();
 				$team_themes_url = $class_team_functions->team_themes_url();
 
-				echo '<link  type="text/css" media="all" rel="stylesheet"  href="'.$team_themes_url[$team_themes].'/style.min.css" >';				
+							
 
 				include $team_themes_dir[$team_themes].'/index.php';				
 	
 				include team_plugin_dir.'/templates/team-grid-custom-css.php';
 	
-	
+				$html.= '<link  type="text/css" media="all" rel="stylesheet"  href="'.$team_themes_url[$team_themes].'/style.min.css" >';	
 	
 				return $html;
 	

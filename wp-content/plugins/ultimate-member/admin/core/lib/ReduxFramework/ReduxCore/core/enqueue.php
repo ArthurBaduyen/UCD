@@ -80,12 +80,11 @@
                 //*****************************************************************
                 // Select2 CSS
                 //*****************************************************************
-                Redux_CDN::register_style(
+                wp_enqueue_style(     
                     'select2-css',
-                    /*'//cdn.jsdelivr.net/select2/3.5.2/select2.css',*/
                     ReduxFramework::$_url . 'assets/css/select2.css',
                     array(),
-                    '3.5.2',//$this->timestamp,
+                    '3.5.2',
                     'all'
                 );
 
@@ -221,9 +220,9 @@
                 
                 Redux_CDN::register_script(
                     'select2-js',
-                    '//cdn.jsdelivr.net/select2/3.5.2/select2' . $this->min . '.js',
+                    '//cdn.jsdelivr.net/select2/4.0.2/js/select2.full.min.js',
                     array( 'jquery', 'redux-select2-sortable-js' ),
-                    '3.5.2',
+                    '4.0.2',
                     true
                 );
 

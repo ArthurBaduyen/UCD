@@ -66,6 +66,7 @@ div.article-content div.entry-content p{
 .b-li-child-flex >.row >div h3 a{
 	font-size: 2rem;
 	margin-top: .5rem !important;
+	/*line-height: 2rem !important;*/
 }
 
 /*Alumni | */
@@ -298,6 +299,16 @@ iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 	padding-top: 3rem !important;
 }
 
+/*Alumni | Features*/
+#post-43 .widget_siteorigin-panels-builder .panel-grid-cell h3{
+	font-size: .9rem !important;
+	text-align: center !important;
+	background-color: #cfb87b;
+	padding-bottom: 9px !important;
+	padding-top: 9px !important;
+	border-bottom: 0px !important;	
+}
+
 /*Alumni | content top margin*/
 #post-43 #pl-43 #pg-43-0{
 	margin-top: 2.6rem;
@@ -308,9 +319,9 @@ iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 	margin-top: 0 !important;
 }
 
-#post-43 .ow-button-base .ow-button-hover{
+/*#post-43 .ow-button-base .ow-button-hover{
 	color: #fff !important;
-}
+}*/
 
 
 

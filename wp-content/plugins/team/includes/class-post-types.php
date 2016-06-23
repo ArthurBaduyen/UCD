@@ -64,7 +64,7 @@ class team_class_post_types{
 				'query_var' 			=> true,
 				'supports' 				=> array( 'title','editor','thumbnail','custom-fields' ),
 				'show_in_nav_menus' 	=> false,
-				'show_in_menu' 	=> 'edit.php?post_type=team',	
+				//'show_in_menu' 	=> 'edit.php?post_type=team',	
 				'menu_icon' => 'dashicons-admin-users',
 
 			) )

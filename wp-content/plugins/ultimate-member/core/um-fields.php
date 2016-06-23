@@ -6,6 +6,7 @@ class UM_Fields {
 
 		$this->editing = false;
 		$this->viewing = false;
+		$this->timestamp = current_time('timestamp');
 
 	}
 
@@ -437,6 +438,10 @@ class UM_Fields {
 					return true;
 				}
 
+				if ( $field_value && $this->editing == true && !is_array( $field_value ) && html_entity_decode( $field_value ) == html_entity_decode( $value ) ) {
+					return true;
+				}
+
 				if ( strstr( $data['default'], ', ') ) {
 					$data['default'] = explode(', ', $data['default']);
 				}
@@ -454,6 +459,8 @@ class UM_Fields {
 				if ( isset( $ultimatemember->form->post_form[$key] ) && $value == $ultimatemember->form->post_form[$key] ) {
 					return true;
 				}
+
+
 
 			}
 
@@ -1403,8 +1410,10 @@ class UM_Fields {
 						$set_mode = '';
 					}
 
-					$output .= '<div class="um-single-image-preview '. $crop_class .'" data-crop="'.$crop_data.'" data-ratio="'.$ratio.'" data-min_width="'.$min_width.'" data-min_height="'.$min_height.'" data-coord=""><a href="#" class="cancel"><i class="um-icon-close"></i></a><img src="" alt="" /></div>';
-					$output .= '<div class="um-single-image-upload" data-icon="'.$icon.'" data-set_id="'.$set_id.'" data-set_mode="'.$set_mode.'" data-type="'.$type.'" data-key="'.$key.'" data-max_size="'.$max_size.'" data-max_size_error="'.$max_size_error.'" data-min_size_error="'.$min_size_error.'" data-extension_error="'.$extension_error.'"  data-allowed_types="'.$allowed_types.'" data-upload_text="'.$upload_text.'" data-max_files_error="'.$max_files_error.'" data-upload_help_text="'.$upload_help_text.'">'.$button_text.'</div>';
+					$nonce = wp_create_nonce( 'um_upload_nonce-'.$this->timestamp );
+
+					$output .= '<div class="um-single-image-preview '. $crop_class .'"  data-crop="'.$crop_data.'" data-ratio="'.$ratio.'" data-min_width="'.$min_width.'" data-min_height="'.$min_height.'" data-coord=""><a href="#" class="cancel"><i class="um-icon-close"></i></a><img src="" alt="" /></div>';
+					$output .= '<div class="um-single-image-upload" data-nonce="'.$nonce.'" data-timestamp="'.$this->timestamp.'" data-icon="'.$icon.'" data-set_id="'.$set_id.'" data-set_mode="'.$set_mode.'" data-type="'.$type.'" data-key="'.$key.'" data-max_size="'.$max_size.'" data-max_size_error="'.$max_size_error.'" data-min_size_error="'.$min_size_error.'" data-extension_error="'.$extension_error.'"  data-allowed_types="'.$allowed_types.'" data-upload_text="'.$upload_text.'" data-max_files_error="'.$max_files_error.'" data-upload_help_text="'.$upload_help_text.'">'.$button_text.'</div>';
 
 					$output .= '<div class="um-modal-footer">
 									<div class="um-modal-right">
@@ -1489,7 +1498,10 @@ class UM_Fields {
 											</a>
 										</div>
 								</div>';
-					$output .= '<div class="um-single-file-upload" data-icon="'.$icon.'" data-set_id="'.$set_id.'" data-set_mode="'.$set_mode.'" data-type="'.$type.'" data-key="'.$key.'" data-max_size="'.$max_size.'" data-max_size_error="'.$max_size_error.'" data-min_size_error="'.$min_size_error.'" data-extension_error="'.$extension_error.'"  data-allowed_types="'.$allowed_types.'" data-upload_text="'.$upload_text.'" data-max_files_error="'.$max_files_error.'" data-upload_help_text="'.$upload_help_text.'">'.$button_text.'</div>';
+
+					$nonce = wp_create_nonce( 'um_upload_nonce-'.$this->timestamp );
+
+					$output .= '<div class="um-single-file-upload" data-timestamp="'.$this->timestamp.'" data-nonce="'.$nonce.'" data-icon="'.$icon.'" data-set_id="'.$set_id.'" data-set_mode="'.$set_mode.'" data-type="'.$type.'" data-key="'.$key.'" data-max_size="'.$max_size.'" data-max_size_error="'.$max_size_error.'" data-min_size_error="'.$min_size_error.'" data-extension_error="'.$extension_error.'"  data-allowed_types="'.$allowed_types.'" data-upload_text="'.$upload_text.'" data-max_files_error="'.$max_files_error.'" data-upload_help_text="'.$upload_help_text.'">'.$button_text.'</div>';
 
 					$output .= '<div class="um-modal-footer">
 									<div class="um-modal-right">
@@ -1554,9 +1566,11 @@ class UM_Fields {
 							foreach($options as $key => $val ) {
 								$val = (string) $val;
 								$val = trim( $val );
-								$post_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'um_role' AND post_title = '$val'");
-								$_role = get_post($post_id);
-								$new_roles[$_role->post_name] = $_role->post_title;
+								$post_id = $wpdb->get_var( 
+									$wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_status = 'publish' AND post_type = 'um_role' AND post_title = %s", $val)
+								);
+								$_role = get_post( $post_id );
+								$new_roles[ $_role->post_name ] = $_role->post_title;
 								wp_reset_postdata();
 							}
 
@@ -1586,9 +1600,12 @@ class UM_Fields {
 							$option_value = apply_filters('um_select_dropdown_dynamic_option_value', $option_value);
 
 							$output .= '<option value="' . $option_value . '" ';
-							if ( $this->is_selected($form_key, $option_value, $data) ) {
+							
+							if ( $this->is_selected( $form_key, $option_value, $data ) ||  $this->is_selected( $form_key, $v, $data )  ) {
 								$output.= 'selected';
 							}
+
+
 							$output .= '>'.__($v, UM_TEXTDOMAIN).'</option>';
 
 						}

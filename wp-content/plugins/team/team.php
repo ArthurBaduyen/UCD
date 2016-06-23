@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: Team
-Plugin URI: http://paratheme.com/items/team-responsive-meet-the-team-grid-for-wordpress/
+Plugin URI: http://www.pickplugins.com/item/team-responsive-meet-the-team-grid-for-wordpress/
 Description: Fully responsive and mobile ready meet the team showcase plugin for wordpress.
-Version: 1.14
-Author: paratheme
-Author URI: http://paratheme.com
+Version: 1.16
+Author: pickplugins
+Author URI: http://pickplugins.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Copyright: 	2015 ParaTheme
+Copyright: 	2015 pickplugins
 
 */
 
@@ -24,16 +24,16 @@ class Team{
 		define('team_plugin_dir', plugin_dir_path( __FILE__ ) );
 		define('team_wp_url', 'http://wordpress.org/plugins/team/' );
 		define('team_wp_reviews', 'http://wordpress.org/support/view/plugin-reviews/team' );
-		define('team_pro_url', 'http://paratheme.com/items/team-responsive-meet-the-team-grid-for-wordpress/' );
-		define('team_demo_url', 'http://paratheme.com/items/team-responsive-meet-the-team-grid-for-wordpress/' );
-		define('team_conatct_url', 'http://paratheme.com/contact' );
-		define('team_qa_url', 'http://paratheme.com/qa/' );
+		define('team_pro_url', 'http://www.pickplugins.com/item/team-responsive-meet-the-team-grid-for-wordpress/' );
+		define('team_demo_url', 'http://www.pickplugins.com/demo/team/' );
+		define('team_conatct_url', 'http://pickplugins.com/contact' );
+		define('team_qa_url', 'http://pickplugins.com/questions/' );
 		define('team_plugin_name', 'Team' );
-		define('team_plugin_version', '1.14' );
+		define('team_plugin_version', '1.16' );
 		define('team_customer_type', 'free' );	 // pro & free	
 		define('team_share_url', 'http://wordpress.org/plugins/team/' );
 		define('team_tutorial_video_url', '//www.youtube.com/embed/8OiNCDavSQg?rel=0' );
-		define('team_tutorial_doc_url', 'http://paratheme.com/documentation/documentation/team/' );		
+		define('team_tutorial_doc_url', 'http://pickplugins.com/docs/documentation/team/' );		
 		
 		include( 'includes/class-post-types.php' );
 		include( 'includes/class-post-meta.php' );		
@@ -42,7 +42,7 @@ class Team{
 		include( 'includes/class-shortcodes.php' );
 
 		include( 'includes/team-functions.php' );
-		include( 'includes/Mobile_Detect.php' );		
+		//include( 'includes/Mobile_Detect.php' );		
 		//include( 'includes/mobble.php' );	
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'team_front_scripts' ) );

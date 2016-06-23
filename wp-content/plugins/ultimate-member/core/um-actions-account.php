@@ -11,15 +11,32 @@
 
 		if ( $_POST['user_password'] && $_POST['confirm_user_password'] ) {
 			$changes['user_pass'] = $_POST['user_password'];
+			
 			add_filter('send_password_change_email','um_send_password_change_email');
-
+			
+			wp_set_password( $changes['user_pass'], um_user('ID') );
+			
+			wp_signon( array('user_login' => um_user('user_login'), 'user_password' =>  $changes['user_pass']) );
 		}
 
-		foreach( $_POST as $k => $v ) {
-			if ( !strstr( $k, 'password' ) && !strstr( $k, 'um_account' ) ) {
-				$changes[ $k ] = $v;
+		$arr_fields = array();
+		$secure_fields = get_user_meta( um_user('ID'), 'um_account_secure_fields', true );
+		if( isset( $secure_fields  ) ){
+			foreach ( $secure_fields as $tab_key => $fields ) {
+				if( isset( $fields ) ){
+					foreach ($fields as $key => $value) {
+						$arr_fields[ ] = $key;
+					}
+				}
 			}
 		}
+
+		$changes = array();
+		foreach( $_POST as $k => $v ) {
+			if ( !strstr( $k, 'password' ) && !strstr( $k, 'um_account' ) && in_array(  $k, $arr_fields ) ) {
+				$changes[ $k ] = $v;
+			}
+		} 
 
 		if ( isset( $changes['hide_in_members'] ) && $changes['hide_in_members'] == __('No','ultimatemember') ) {
 			delete_user_meta( um_user('ID'), 'hide_in_members' );
@@ -100,9 +117,11 @@
 		}
 		$ultimatemember->account->current_tab = 'general';
 
+		$user = get_user_by('login', um_user('user_login') );
 		// change password
 		if ( $_POST['current_user_password'] != '' || $_POST['user_password'] != '' || $_POST['confirm_user_password'] != '') {
-			if ( $_POST['current_user_password'] == '' || !wp_check_password( $_POST['current_user_password'], um_user('user_pass'), um_user('ID') ) ) {
+			if ( $_POST['current_user_password'] == '' || ! wp_check_password( $_POST['current_user_password'], $user->data->user_pass, $user->data->ID ) ) {
+
 				$ultimatemember->form->add_error('current_user_password', __('This is not your password','ultimatemember') );
 				$ultimatemember->account->current_tab = 'password';
 			} else { // correct password

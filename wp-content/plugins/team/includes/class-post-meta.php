@@ -257,7 +257,7 @@ public function meta_boxes_team_member_save_meta_fileds($post_id) {
 		if(empty($team_member_social_field))
 			{
 				$class_team_functions = new class_team_functions();
-				$default_social_field = $class_team_functions->team_member_social_field();
+				$team_member_social_field = $class_team_functions->team_member_social_field();
 				
 			}
  
@@ -605,15 +605,24 @@ Team Post
 				<div class="option-box">
                     <p class="option-title"><?php _e('Grid item max Width(px).','team'); ?></p>
                     <p class="option-info"><?php _e('Maximum width for grid items.','team'); ?></p>
-                    For Destop:<br/>
-					<input type="text" name="team_items_max_width" placeholder="ex:150px, px or %" id="team_items_max_width" value="<?php if(!empty($team_items_max_width)) echo $team_items_max_width; else echo "280px"; ?>" />
-                    <br/>
-                    <?php _e('For Mobile:','team'); ?> <br/>
-					<input type="text" name="team_items_width_mobile" placeholder="ex:150px, px or %" id="team_items_width_mobile" value="<?php if(!empty($team_items_width_mobile)) echo $team_items_width_mobile; else echo "90%"; ?>" />
                     
-                    <br/>
-                    <?php _e('For Tablet:','team'); ?> <br/>
+                    <div>
+                    <?php _e('For Destop: (min-width:1024px)','team'); ?> <br/>
+					<input type="text" name="team_items_max_width" placeholder="ex:150px, px or %" id="team_items_max_width" value="<?php if(!empty($team_items_max_width)) echo $team_items_max_width; else echo "280px"; ?>" />
+                    </div>
+					
+                    <br>
+
+					<div>
+                    <?php _e('For Tablet: ( min-width:768px )','team'); ?> <br/>
 					<input type="text" name="team_items_width_tablet" placeholder="ex:150px, px or %" id="team_items_width_tablet" value="<?php if(!empty($team_items_width_tablet)) echo $team_items_width_tablet; else echo "45%"; ?>" />                    
+                    </div> 
+                    <br>
+                    
+                    <div>             
+                    <?php _e('For Mobile: ( min-width : 320px, )','team'); ?> <br/>
+					<input type="text" name="team_items_width_mobile" placeholder="ex:150px, px or %" id="team_items_width_mobile" value="<?php if(!empty($team_items_width_mobile)) echo $team_items_width_mobile; else echo "90%"; ?>" />
+                    </div>                   
                                       
                     
                     

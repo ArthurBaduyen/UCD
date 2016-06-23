@@ -23,18 +23,7 @@ if ( ! defined('ABSPATH')) exit; // if direct access
 		
 		if ( $wp_query->have_posts() ) :
 		
-		// use to detect mobile and tablet device Mobile_Detect class 
-		$Mobile_Detect = new Mobile_Detect();
-		$is_mobile = $Mobile_Detect->isMobile();
-		$is_tablet = $Mobile_Detect->isTablet();
 
-		if($is_mobile)
-			{
-				$team_items_max_width = $team_items_width_mobile;
-			}
-		elseif($is_tablet){
-			$team_items_max_width = $team_items_width_tablet;
-			}
 			
 		$i=0;
 		
@@ -50,7 +39,7 @@ if ( ! defined('ABSPATH')) exit; // if direct access
 		$team_thumb_url = $team_thumb['0'];
 
 		
-		$html.= '<div style="width:'.$team_items_max_width.';text-align:'.$team_item_text_align.';margin:'.$team_items_margin.'" class="team-item" >';
+		$html.= '<div class="team-item" >';
 		
 
 		$class_team_functions = new class_team_functions();

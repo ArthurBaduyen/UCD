@@ -1,10 +1,10 @@
 === Team ===
 	Contributors: pickplugins
-	Donate link: http://paratheme.com
-	Tags: team, members profiles, our teams, team members, team plugin wordpress, meet the team
+	Donate link: http://pickplugins.com
+	Tags: team, members profiles, our teams, team members, team plugin wordpress, meet the team, team showcase, my team, 
 	Requires at least: 3.8
 	Tested up to: 4.5.2
-	Stable tag: 1.14
+	Stable tag: 1.16
 	License: GPLv2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,34 +16,55 @@
 Team is pure html & css3 responsive meet the team grid for wordpress.
 Display team member profiles with descriptions and links to social media using our shortcode, widget. this plugin also support themes.
 
-### Team by http://paratheme.com
+### Team by http://pickplugins.com
 
-* [Live Demo!&raquo;](http://paratheme.com/demo/team/)
-* [Upgrade to Premium!&raquo;](http://paratheme.com/items/team-responsive-meet-the-team-grid-for-wordpress/)
+* [Live Demo!&raquo;](http://www.pickplugins.com/demo/team/)
+* [Upgrade to Premium!&raquo;](http://www.pickplugins.com/item/team-responsive-meet-the-team-grid-for-wordpress/)
 * [Watch Video Tutorial!&raquo;](https://www.youtube.com/watch?v=8OiNCDavSQg)
 
 
 <strong>Plugin Features</strong><br />
 
-* Fully responsive and mobile ready.
-* Query Team meamber from latest, Older Published, by Only Year, by Month of a year, Categories, post id.
-* Unlimited team's anywhere.
-* Two Different themes.
 * Custom number of member query.
-* Team member thumbnail images size selection.
-* Team grid thumbnail custom width.
+* Team post thumbnail images size selection.
+* Team grid items custom width.
 * Team grid thumbnail custom height.
 * Team grid items text align.
 * Background image for team area.
 * Team member name font color.
 * Team member name font size.
 * Team member position font color.
-* Team member position font size.
+* Member position font size & color.
 * Team member bio font color.
 * Team member bio font size.
+* Enable Masonry grid for any themes.
+* Grid items text align.
+* Member bio font size.
+* Member bio full or excerpt selection.
+* Custom number of excerpt length.
+* Custom “read more” text for excerpt.
+* Custom CSS for each team grid.
+* Drag & Drop sorting for custom social icons.
+* 4 different ready style for social icons.
+* Pagination support.
+* Query order.
+* Query orderby.
+* Custom  sLug for team members
 
-<strong>Video Tutorial Here.(with premium features)</strong>
-https://www.youtube.com/watch?v=LI9yZmOGXDM
+
+<strong>Premium Features</strong><br />
+
+* 30+ Ready Different Skin.
+* Display from member categories(group).
+* Display by member id’s.
+* Custom icons for custom social links.
+* Click-able link to custom post team members.
+* Click-able link to custom link to team members.
+* Popup profile box on click member thumbnail.
+* Popup Slider on click member.
+* Mixitup style team grid.
+* Skill bars.
+* Short-code support for team member content.
 
 
 
@@ -84,6 +105,16 @@ then paste this shortcode anywhere in your page to display Team gird.<br />
 
 == Changelog ==
 
+
+
+	= 1.16 =
+	
+    * 20/06/2016 fix - minor php issue fixed.
+
+	= 1.15 =
+	
+    * 17/06/2016 fix - Invalid argument supplied for foreach in team member edit page issue fixed.
+    * 17/06/2016 fix - responsive issue fixed.
 
 	= 1.14 =
 	

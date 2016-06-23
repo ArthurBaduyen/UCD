@@ -500,7 +500,13 @@ function initImageUpload_UM( trigger ) {
 			url: um_scripts.imageupload,
 			method: "POST",
 			multiple: false,
-			formData: {key: trigger.data('key'), set_id: trigger.data('set_id'), set_mode: trigger.data('set_mode') },
+			formData: {
+				key: trigger.data('key'), 
+				set_id: trigger.data('set_id'), 
+				set_mode: trigger.data('set_mode'),
+				_wpnonce: trigger.data('nonce'),
+				timestamp: trigger.data('timestamp')
+			 },
 			fileName: trigger.data('key'),
 			allowedTypes: trigger.data('allowed_types'),
 			maxFileSize: trigger.data('max_size'),
@@ -523,7 +529,13 @@ function initImageUpload_UM( trigger ) {
 
 				trigger.selectedFiles = 0;
 
+				try{
 				data = jQuery.parseJSON(data);
+				} catch (e) {
+				   console.log( e, data );
+				    return;
+				}
+
 				if (data.error && data.error != '') {
 
 					trigger.parents('.um-modal-body').append('<div class="um-error-block">'+data.error+'</div>');
@@ -580,7 +592,13 @@ function initFileUpload_UM( trigger ) {
 			url: um_scripts.fileupload,
 			method: "POST",
 			multiple: false,
-			formData: {key: trigger.data('key'), set_id: trigger.data('set_id'), set_mode: trigger.data('set_mode') },
+			formData: {
+				key: trigger.data('key'), 
+				set_id: trigger.data('set_id'), 
+				set_mode: trigger.data('set_mode'),
+				_wpnonce: trigger.data('nonce'),
+				timestamp: trigger.data('timestamp')
+			},
 			fileName: trigger.data('key'),
 			allowedTypes: trigger.data('allowed_types'),
 			maxFileSize: trigger.data('max_size'),
@@ -641,7 +659,7 @@ function initFileUpload_UM( trigger ) {
 
 function initCrop_UM() {
 
-	var target_img = jQuery('.um-modal:visible .um-single-image-preview img');
+	var target_img = jQuery('.um-modal:visible .um-single-image-preview img').first();
 	var target_img_parent = jQuery('.um-modal:visible .um-single-image-preview');
 
 	var crop_data = target_img.parent().attr('data-crop');
@@ -719,6 +737,9 @@ function initCrop_UM() {
 
 			if ( crop_data != 0 ) {
 				target_img.cropper( opts );
+				jQuery('.um-single-image-preview img.cropper-hidden').cropper('destroy');
+				jQuery('.um-single-image-preview img.lazyloaded').addClass('cropper-hidden');
+				jQuery('.um-single-image-preview img.lazyloaded').removeClass('lazyloaded');
 			}
 
 		}

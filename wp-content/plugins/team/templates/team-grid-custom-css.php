@@ -19,6 +19,30 @@ if ( ! defined('ABSPATH')) exit;  // if direct access
 	
 	';	
 	
+	$html .= '#team-'.$post_id.' .team-item{
+			
+			text-align:'.$team_item_text_align.';
+			margin:'.$team_items_margin.';
+			}
+			';	
+
+	$html .= '
+	@media only screen and (min-width: 1024px ) {
+	#team-'.$post_id.' .team-item{width:'.$team_items_max_width.'}
+	
+	}
+	
+	@media only screen and ( min-width: 768px ) and ( max-width: 1023px ) {
+	#team-'.$post_id.' .team-item{width:'.$team_items_width_tablet.'}
+	}
+	
+	@media only screen and ( min-width: 320px ) and ( max-width: 767px ) {
+	#team-'.$post_id.' .team-item{width:'.$team_items_width_mobile.'}
+	}';
+
+	
+	
+	
 	
 	
 	
