@@ -144,47 +144,51 @@ div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_list
 }
 
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .widget_text .widget-title{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .widget_text .widget-title{
 	margin-top: 8.5rem !important;
 	border-bottom: 1px solid #F2F2F2 !important;
 }
 
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .widget_text .ffwd_title_spun1_0{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .widget_text .ffwd_title_spun1_0{
 	margin-top: 0px !important;
 	background-color: #fff !important;
 	border-bottom: 0px !important;
 }
 
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .blog_style_object_container_0:first-child{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .blog_style_object_container_0:first-child{
 	border-top: 0px !important;
 }
 
+/*#ffwd_container1_0 #ffwd_container2_0 .blog_style_object_container_0{
+	border-top: 0px !important;
+}*/
+
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .blog_style_object_container_0{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .blog_style_object_container_0{
 	margin-bottom: 0px !important;
 	margin-top: 0px !important;
 }
 
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .ffwd_blog_style_object_name_0, .ffwd_from_time_post_0{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .ffwd_blog_style_object_name_0, .ffwd_from_time_post_0{
 	display: none;
 }
 
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0{
 	margin-bottom: 0px !important;
 }
 
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0 p{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0 p{
 	line-height: 18px !important;
 	color: #000 !important;
  }
  
 /*Homepage | Facebook feed*/
-#pl-w5768e24743533 .panel-grid .panel-grid-cell .blog_style_image_container_0 .bwg_blog_style_img_cont_0 img.ffwd_blog_style_img_0{
+#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .blog_style_image_container_0 .bwg_blog_style_img_cont_0 img.ffwd_blog_style_img_0{
 	margin-bottom: 0rem !important;
 	border-radius: 5px !important;
 	width: 83.6% !important;
@@ -857,6 +861,11 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 
 /*Past Winners*/
 #post-638 {
+    margin-top: 2.6rem !important;
+}
+
+/*Student Opportunitiesssss*/
+#post-726{
     margin-top: 2.6rem !important;
 }
 
