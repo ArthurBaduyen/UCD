@@ -341,7 +341,7 @@ var soWidgetPostSelector = ( function ($, _) {
 			}
 
             // The order field
-            this.form.append($('<div class="query-builder-form-field">' + sowPostsSelectorTpl.fields.orderby + '</div>').disableSelection());
+            this.form.append($('<div class="query-builder-form-field">' + sowPostsSelectorTpl.fields.orderby + '</div>'));
             if( typeof this.model.get('orderby') !== 'undefined' ) this.form.find('select[name="orderby"]').val(this.model.get('orderby'));
             if( typeof this.model.get('order') !== 'undefined' ) this.form.find('input[name="order"]').val(this.model.get('order'));
 
@@ -631,10 +631,7 @@ var soWidgetPostSelector = ( function ($, _) {
                         query : 'post_type=_all&posts_per_page=-1&post__in=' + getPosts.join(',')
                     },
                     function(data){
-
-                        console.log(data);
                         if(typeof data.posts !== 'undefined') {
-
                             _.each(data.posts, function(post, i){
                                 v.postCache[post.id] = {
                                     id : post.id,
@@ -643,7 +640,6 @@ var soWidgetPostSelector = ( function ($, _) {
                                     editUrl: post.editUrl
                                 };
                             });
-
                         }
 
                         v.refreshLoading();

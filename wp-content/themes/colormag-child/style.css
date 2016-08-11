@@ -7,6 +7,15 @@ Template:       colormag
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
 
+
+
+/*link color: #51abff*/
+/*Link color: #cfb87b*/
+
+a {
+	/*color: #51abff !important;*/
+}
+
 html * {
 	font-family: 'helvetica';
 }
@@ -16,9 +25,16 @@ p, ul li{
 	color: #808080 !important;
 }
 
+ul li {
+	/*margin-left: 1rem !important;*/
+	/*padding-bottom: .5rem !important;*/
+	font-size: 15px !important;
+	/*list-style-type: disc !important;*/
+}
+
 /*Global Post Widgest | Title size*/
 h3.entry-title{
-	font-size: 1rem !important;
+	/*font-size: 1rem !important;*/
 	color: #585858 !important;
 }
 
@@ -38,6 +54,39 @@ div.article-content div.entry-content p{
 /*Homepage*/
 #page div.clearfix {
 	padding-top: 0;
+}
+
+/*Homepage | plugin slider*/
+#pl-w57907b98d92d4 .panel-grid .panel-grid-cell .panel-first-child{
+	margin-top: 1rem !important;
+}
+
+/*Homepage | slider description*/
+.n2-ss-align .n2-font-1304-paragraph{
+	display: none;
+}
+
+/*Homepage | slider title*/
+div#n2-ss-2 .n2-ss-layer {
+	top: 0rem !important;
+	left: 0rem !important;
+	width: 100% !important;
+}
+
+/*Homepage | slider title*/
+/*div#n2-ss-2 .n2-ss-layer h2.n2-font-1009-hover{*/
+div#n2-ss-5 .n2-ss-layer .n2-font-1009-hover, div#n2-ss-4 .n2-ss-layer .n2-font-1009-hover {
+	font-size: 1.2rem !important;
+	font-weight: normal !important;
+	/*background-color: #cfb87b !important;*/
+	background-color: rgba(0,0,0,.75);
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+	padding-top: .5rem !important;
+	padding-bottom: .5rem !important;
+	/*position: absolute !important;*/
+	/*bottom: 0px !important;*/
+	width: 100% !important;
 }
 
 /*Homepage | plugin slider*/
@@ -62,6 +111,15 @@ div.article-content div.entry-content p{
 	/*height: 500px !important;*/
 }
 
+/*Homepage | feature*/
+#siteorigin-panels-builder-33 {
+	margin-bottom: 0px !important;
+}
+
+/*Homepage | plugin slider*/
+#siteorigin-panels-builder-25 {
+	margin-top: 0px !important;
+}
 /*Homepage | plugin slider title*/
 .b-li-child-flex >.row >div h3 a{
 	font-size: 2rem;
@@ -69,13 +127,58 @@ div.article-content div.entry-content p{
 	/*line-height: 2rem !important;*/
 }
 
+/*Homepage | program section headline*/
+.siteorigin-panels-stretch .panel-grid-cell .widget_sow-headline {
+	padding-top: 5rem !important;
+}
+
+/*Homepage | program section button*/
+.siteorigin-panels-stretch .panel-grid-cell .widget_sow-button {
+	padding-bottom: 7rem !important;
+}
+
+/*Homepage | Trending news, upcoming events*/
+#pg-w57a93b1ebb8d1-0 {
+	margin-bottom: 5rem !important;
+}
+
+/*Homepage | Trending news*/
+#pl-w57a93b1ebb8d1 .panel-grid .panel-grid-cell .widget_colormag_featured_posts_vertical_widget h3.widget-title {
+	font-size: 2rem !important;
+	margin-top: 2rem !important;
+	border-bottom: 1px solid #F2F2F2 !important;
+	background-color: rgba(0,0,0,0) !important;
+}
+
+/*Homepage | Trending news*/
+#pl-w57a93b1ebb8d1 .panel-grid .panel-grid-cell .widget_colormag_featured_posts_vertical_widget .widget-title span {
+	background-color: rgba(0,0,0,0) !important;
+	color: #323232 !important;
+}
+
+#pl-w57a81e7ec7c28 .panel-grid-cell .widget_colormag_featured_posts_vertical_widget .following-post .entry-title {
+	font-family: roboto !important;
+	color: #808080 !important;
+	font-size: 1rem !important;
+}
+
 /*Alumni | */
 #pl-43 .b-li-child-flex >.row >div h3 a{
 	margin-top: 0px !important;
 }
 
+.page-id-43 div div#main {
+	padding-bottom: 0px !important;
+	/*margin :1rem !important;*/
+}
+
 #pl-43 .b-slider-thumbnail{
 	margin-bottom: 0px !important;
+}
+
+#pl-43 hr {
+	margin-top: .5rem !important;
+	margin-bottom: 1rem !important;
 }
 
 /*Homepage | plugin slider date*/
@@ -139,21 +242,60 @@ div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_list
 
 /*Homepage | Headline | undergrad, grad & cpep*/
 .panel-grid-cell .panel-first-child{
-	margin-top: 5rem;
+	margin-top: 1rem;
 	margin-bottom: 1.5rem;
 }
 
 /*Homepage | Facebook feed*/
 #pl-w576b8fd51b103 .panel-grid .panel-grid-cell .widget_text .widget-title{
-	margin-top: 8.5rem !important;
-	border-bottom: 1px solid #F2F2F2 !important;
+/*	margin-top: 8.5rem !important;
+	border-bottom: 1px solid #F2F2F2 !important;*/
 }
 
 /*Homepage | Facebook feed*/
 #pl-w576b8fd51b103 .panel-grid .panel-grid-cell .widget_text .ffwd_title_spun1_0{
-	margin-top: 0px !important;
+/*	margin-top: 0px !important;
 	background-color: #fff !important;
-	border-bottom: 0px !important;
+	border-bottom: 0px !important;*/
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .bwg_blog_style_full_width {
+	margin-bottom: 0px !important;
+	/*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;*/
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .ffwd_title_spun1_0 {
+	background-color: #fff !important;
+	border: 0px !important;
+}
+
+.ffwd_blog_style_object_from_0 {
+	display: none !important;
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .blog_style_object_container_0 {
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	border-left: 5px solid #3b5998 !important;
+	border-top: 0px !important;
+
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .blog_style_object_container_0 {
+	/*border-width: 0px !important;*/
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .bwg_blog_style_img_cont_0 {
+	display: none !important;
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .ffwd_blog_style_object_messages_0 {
+	margin-bottom:  0px !important;
+}
+
+#ffwd_container1_0 #ffwd_container2_0 .bwg_blog_style_object_description_0 {
+	display: none !important;
 }
 
 /*Homepage | Facebook feed*/
@@ -161,49 +303,38 @@ div div.panel-grid div.panel-grid-cell div.widget_widget_recent_jobs ul.job_list
 	border-top: 0px !important;
 }
 
-/*#ffwd_container1_0 #ffwd_container2_0 .blog_style_object_container_0{
-	border-top: 0px !important;
-}*/
-
-/*Homepage | Facebook feed*/
-#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .blog_style_object_container_0{
-	margin-bottom: 0px !important;
-	margin-top: 0px !important;
-}
-
 /*Homepage | Facebook feed*/
 #pl-w576b8fd51b103 .panel-grid .panel-grid-cell .ffwd_blog_style_object_name_0, .ffwd_from_time_post_0{
 	display: none;
 }
 
-/*Homepage | Facebook feed*/
-#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0{
-	margin-bottom: 0px !important;
-}
-
-/*Homepage | Facebook feed*/
-#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .ffwd_blog_style_object_info_container_0 p{
-	line-height: 18px !important;
-	color: #000 !important;
- }
- 
-/*Homepage | Facebook feed*/
-#pl-w576b8fd51b103 .panel-grid .panel-grid-cell .blog_style_image_container_0 .bwg_blog_style_img_cont_0 img.ffwd_blog_style_img_0{
-	margin-bottom: 0rem !important;
-	border-radius: 5px !important;
-	width: 83.6% !important;
-	height: auto;
+/*Homepage | facebook feed top border*/
+#ffwd_container1_0 #ffwd_container2_0 .blog_style_object_container_0 {
+	border-top: 0px !important;
+	border-bottom: 1px solid #c9c9c9; 
 }
 
 /*Homepage | twitter feed*/
-.widget-easy-twitter-feed-widget-global-wrapper{
-	margin-top: 8.5rem !important;
+.fts-twitter-text{
+	font-size: 14px !important;
+	color: #808080 !important;
 }
 
-/*Homepage | twitter title bottom border*/
-.widget-easy-twitter-feed-widget-global-wrapper .widget-title{
-	border-bottom: 1px solid #F2F2F2 !important;
+.fts-twitter-description-image {
+	display: none !important;
 }
+
+/*Homepage | twitter feed*/
+.fts-twitter-div a.fts-powered-by-text{
+	display: none !important;
+}
+
+.fts-tweeter-wrap .tweeter-info {
+	border-left: 5px solid #0084B4 !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	margin-top: .9rem !important;	
+}
+
 
 iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 	font-size: 1.2rem !important;
@@ -276,8 +407,21 @@ iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 	/*padding-bottom: 8rem !important;*/
 }
 
+/*Alumni footer*/
+/*.page-id-43 #page #colophon{
+	position: absolute !important;
+	bottom: 0px !important;
+	width: 100%;
+}*/
+
+/*footer#colophon{
+	position: absolute;
+	bottom: 0 !important;
+	width: 100% !important;
+}*/
+
 .so-widget-sow-button .ow-button-base{
-	padding-bottom: 5rem !important;
+	padding-bottom: 1.5rem !important;
 }
 
 /*Alumni page | event list indent */
@@ -286,21 +430,55 @@ iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 }
 
 /*Alumni | programs*/
-#post-31 .so-widget-sow-headline-sow-headline-32f7cbb385e5 #sow-headline-container.sow-headline h6{
+#post-31 .so-widget-sow-headline-sow-headline #sow-headline-container.sow-headline h6{
 	font-size: .9rem !important;
 	padding-bottom: 1rem !important;
 	color: #808080 !important;
 }
 
 /*Alumni | programs*/
-#post-31 .so-widget-sow-headline-sow-headline-32f7cbb385e5 #sow-headline-container.sow-headline h1{
+#post-31 .so-widget-sow-headline-sow-headline #sow-headline-container.sow-headline h3{
 	font-size: 2rem !important;
+}
+
+#post-31 .panel-grid .panel-grid-cell .panel-widget-style .so-widget-sow-headline h1 {
+
+}
+
+#post-31 .panel-grid .panel-grid-cell .widget_sow-headline {
+	padding-top: 2rem !important;
+}
+
+
+#post-31 .panel-grid .panel-grid-cell .widget_sow-headline .so-widget-sow-headline h6{
+	font-size: 1rem !important;
+	color: #808080 !important;
+}
+
+#post-31 .ow-button-base{
+	padding-top: 0rem !important;
+}
+
+
+#post-31 #pg-31-1, #post-31 #pg-31-2, #post-31 #pg-31-3 {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	margin-bottom: 1rem !important;
+	background-color: #f9f9f9;
 }
 
 /*Alumni | Features*/
 #post-43 .siteorigin-panels-stretch .panel-grid-cell .widget_siteorigin-panels-builder div .panel-grid .siteorigin-panels-stretch{
 	padding-bottom: 3rem !important;
 	padding-top: 3rem !important;
+}
+
+/*Alumni | slider*/
+#post-43 div#n2-ss-2 .n2-ss-layer .n2-font-1304-paragraph {
+	display: none !important;
+}
+
+#post-43 div#n2-ss-2 .n2-ss-layer h2.n2-font-1009-hover {
+	font-size: 1rem !important;
 }
 
 /*Alumni | Features*/
@@ -323,9 +501,21 @@ iframe .SandboxRoot.env-bp-550 .timeline-Tweet-text{
 	margin-top: 0 !important;
 }
 
+#post-43 #pl-43 #pg-43-3 .siteorigin-panels-stretch .panel-grid-cell .so-panel .panel-widget-style {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
 /*#post-43 .ow-button-base .ow-button-hover{
 	color: #fff !important;
 }*/
+
+#post-43 .shortcodes-ultimate .su-button-center a span {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: .5rem !important;
+	padding-bottom: .5rem !important;
+	min-width: 157.5px !important;
+}
 
 
 
@@ -523,8 +713,8 @@ section.widget_sow-features{
 
 /* 3 rows */
 section.widget_siteorigin-panels-builder div .panel-grid .siteorigin-panels-stretch{
-	padding-bottom: 3rem !important;
-	padding-top: 3rem !important;
+	padding-bottom: 2rem !important;
+	padding-top: .1rem !important;
 }
 
 /*3 rows*/
@@ -671,9 +861,10 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	padding-top: 2rem;
 }
 
-/*Psot page | title bottom border*/
+/*Post page | title bottom border*/
 .page-header{
 	border-bottom: 0;
+	display: none !important;
 }
 
 /*Post view page | article image top margin*/
@@ -691,14 +882,25 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	margin-top: 2.6rem !important;
 }
 
+/*article#post-0 .entry-content */.tribe-events-event-meta .events-meta-group-organizer dl dd{
+	font-weight: normal !important;
+	font-size: .5rem !important;
+}
 
 
 .sow-features-list .sow-features-feature.sow-features-feature-last-row{
 	/*padding-top: 5rem !important;*/
 }
 
+/*News/Post | featured post*/
+#post-391 .featured-image {
+	/*margin-top: 0px !important;*/
+}
 
-
+/*News single post | */
+.single-post .related-posts .single-related-posts .article-content .entry-title a{
+	font-size: 1rem !important;
+}
 
 /*Program page | content top margin*/
 #post-31{
@@ -726,6 +928,23 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	margin-bottom: 5px;
 }
 
+/*About us | read more content*/
+#post-41 .collapseomatic_content {
+	margin-left: 0px !important;
+	font-size: 15px !important;
+	color: #808080 !important
+}
+
+/*About us | name*/
+#post-41 .panel-grid-cell .widget_sow-editor .so-widget-sow-editor .siteorigin-widget-tinymce h5 {
+	padding-bottom: 0px !important;
+	font-size: 20px !important;
+}
+
+#post-41 .panel-grid {
+	margin-bottom: 2rem !important;
+}
+
 
 #post-41 .panel-grid-cell .panel-first-child{
 	margin-top: 0 !important;
@@ -746,6 +965,10 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	margin-top: 2.6rem;
 }
 
+#post-455 .panel-grid-cell .panel-first-child {
+	margin-top:  0px !important;
+}
+
 #post-455 li{
 	margin-left: 1rem !important;
 }
@@ -755,13 +978,35 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	margin-top: 2.6rem;
 }
 
+#post-457 hr, #post-459 hr, #post-455 hr, #post-31 hr {
+	margin-top: 0px !important;
+}
+
+#post-457 .panel-grid-cell .panel-first-child {
+	margin-top:  0px !important;
+}
+
 #post-457 .entry-content li{
 	margin-left: 1rem !important;
+	list-style: disc !important;
+	font-size: 15px !important;
+	padding-bottom: .5rem !important;
 }
 
 /*CPEP page | content top margin*/
 #post-459{
 	margin-top: 2.6rem;
+}
+
+#post-459 .panel-grid-cell .panel-first-child {
+	margin-top:  0px !important;
+}
+
+#post-459 .entry-content li{
+	margin-left: 1rem !important;
+	list-style: disc !important;
+	font-size: 15px !important;
+	padding-bottom: .5rem !important;
 }
 
 #post-520{
@@ -781,6 +1026,45 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	margin-top: 2.6rem;
 }
 
+#post-37 .siteorigin-panels-stretch .panel-grid-cell .widget_siteorigin-panels-builder .panel-grid {
+	padding-top: 1.5rem !important;
+	padding-bottom:  1.5rem !important;
+}
+
+.page-id-37 #main {
+	padding-bottom: 0px !important;
+}
+
+#post-37 #pg-37-4 {
+	margin-bottom: 	2rem !important;
+}
+
+#post-37 li {
+	font-size: 15px !important;
+	padding-bottom: .5rem !important;
+	list-style: disc !important;
+	margin-left: 1rem !important;
+}
+
+#post-37 .su-spoiler {
+	margin-bottom: 0rem !important;
+}
+
+#post-37 .su-spoiler .su-spoiler-title{
+	padding-bottom: 0px !important;
+}
+
+#post-37 .su-spoiler .su-spoiler-title {
+	font-size: 1rem !important;
+	color: #808080 !important;
+	font-weight: normal;
+}
+
+#post-37 .su-accordion hr {
+	margin-top: .5rem !important;
+	margin-bottom: 1rem !important;
+}
+
 /*Business Plan Competition | frist child top margin*/
 #post-37 .panel-grid-cell .panel-first-child{
 	margin-top: 0 !important;
@@ -791,11 +1075,28 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 	margin-bottom: 0 !important;
 }
 
+/*Business Plan Competition | button*/
+#post-37 .widget_sow-button {
+	padding-bottom: 1rem !important;
+}
+
+/*Business Plan Competition | sponsors*/
+#post-37 #pl-w57a14176b8fba .panel-grid .panel-grid-cell .widget_sow-image {
+	/*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;*/
+	/*padding: .5rem !important;*/
+}
+
 
 
 /*contact page | margin top*/
 #post-447 .panel-grid-cell .panel-first-child{
 	margin-top: 0rem !important;
+}
+
+#post-447 hr {
+	margin-top: 1rem !important;
+	margin-bottom: 2rem !important;
+	/*margin: 1rem 0rem .5rem 0rem !important;*/
 }
 
 /*Program page | margin top*/
@@ -833,7 +1134,14 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 }
 
 #post-610 #pl-610 .panel-grid .siteorigin-panels-stretch{
-	padding-top: 4rem !important;
+	padding-top: 2rem !important;
+	padding-bottom: 2rem !important;
+}
+
+#post-610 li {
+	font-size: 15px !important;
+	padding-bottom: .5rem !important;
+	list-style: disc !important;
 }
 
 /*Tuition & Scholarships | list indent*/
@@ -848,6 +1156,38 @@ div.article-content div.entry-content div.single_job_listing ul.job-listing-meta
 
 #post-614 .panel-grid-cell .panel-first-child{
 	margin-top: 0 !important;
+}
+
+.page-id-614 div#page div#main {
+	padding-bottom: 0px !important;
+}
+
+.page-id-614 div#page div#main div.siteorigin-panels-stretch{
+	padding-top: 20px !important;
+	padding-bottom: 10px !important;
+}
+
+#post-614 .panel-grid .siteorigin-panels-stretch .panel-grid-cell .so-panel{
+	/*margin-bottom: 1rem !important;*/
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+	/*padding: 0px !important;*/
+	padding-left: 	10px !important;
+	padding-right: 10px !important;
+	padding-top: 10px !important;
+	/*margin-left: 5px !important;*/
+	/*margin-right: 5px !important;*/
+}
+
+#post-614 .panel-grid .siteorigin-panels-stretch .panel-grid-cell .widget_sow-editor {
+	background-color: #f9f9f9;
+}
+
+#post-614 .panel-grid .siteorigin-panels-stretch .panel-grid-cell .widget_sow-editor a {
+	color: #808080 !important;
+}
+
+#post-614 .panel-grid .siteorigin-panels-stretch {
+	padding-bottom: 0px !important;
 }
 
 /*How to enter | content top margin*/

@@ -1,9 +1,9 @@
 === SiteOrigin Widgets Bundle ===
 Tags: bundle, widget, button, slider, image, carousel, price table, google maps, tinymce, social links
 Requires at least: 3.9
-Tested up to: 4.5.2
-Stable tag: 1.6
-Build time: 2016-06-21T15:53:26+02:00
+Tested up to: 4.5.3
+Stable tag: 1.6.4
+Build time: 2016-07-21T09:52:32+02:00
 License: GPLv3 or later
 Contributors: gpriday, braam-genis
 
@@ -50,6 +50,32 @@ The SiteOrigin Widgets Bundle is the perfect platform to build widgets for your 
 3. An example of the button widget.
 
 == Changelog ==
+
+= 1.6.4 - 21 July 2016 =
+* More settings and customizability for Headline widget.
+* Added FitText to Headline and Hero Image widgets.
+* Fixed Pixabay image importing.
+
+= 1.6.3 - 19 July 2016 =
+* Added image search functionality to media field.
+* Moved actions into their own file.
+* Allow widgets to provide their own LESS/HTML.
+* Added very simple code field.
+* Multiple widgets can have the same class. Allowing widget functionality to come from configuration.
+* Various tweaks for upcoming Widgets Builder plugin.
+
+= 1.6.2 - 11 July 2016 =
+* Fixed Firefox issue in post selector builder.
+* Properly escape all uses off add_query_arg.
+* Added filter after video
+
+= 1.6.1 - 24 June 2016 =
+* Social Links: Fixed auto-filling of network colors.
+* Social Links: Added 500px network.
+* Social Links: Added title tag to link tags.
+* Maps: Prevent JS error in when maps widget script is enqueued but widget isn't displayed.
+* Maps: Made API field more prominent as it's now required by the Google Maps API.
+* Added more general error checking.
 
 = 1.6 - 21 June 2016 =
 * Added builder field.
